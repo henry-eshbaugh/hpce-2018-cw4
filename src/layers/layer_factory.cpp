@@ -15,7 +15,6 @@ std::shared_ptr<Layer> createLayer(
 ){
     if(layerEngine=="simple"){
         return CreateSimpleLayer(nIn,nOut,synapses);
-    /*     
     }else if(layerEngine=="par_for_naive"){
         return CreateParForNaiveLayer(nIn,nOut,synapses);
         
@@ -28,6 +27,7 @@ std::shared_ptr<Layer> createLayer(
     }else if(layerEngine=="par_for_clustered"){
         return CreateParForClusteredLayer(nIn,nOut,synapses);
         
+    /*     
     }else if(layerEngine=="gpu_clustered"){
         return CreateGPUClusteredLayer(nIn,nOut,synapses);
     */

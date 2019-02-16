@@ -1,0 +1,8 @@
+set term pdf
+set label outside
+
+set output "pipeline_p_vs_bandwidth.pdf"
+set output "dependency_sketch.pdf"
+set output "output_dependency_cone.pdf"
+set output "single_layer_ratio_vs_time.pdf"
+set output "single_layer_n_vs_time.pdf"

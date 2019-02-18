@@ -1,6 +1,6 @@
 #!/bin/bash
 export TIMEFORMAT=%R
-for i in 8 16 32 64 128 256 512 1024 2048 4096
+for i in 8 16 32 64 128 256 512 1024 2048 4096 8192 16384 32768 65536
 do
 	./bin/generate_sparse_layer $i $i > w/scaling_$i.bin
 	for j in simple par_for_naive par_for_atomic clustered par_for_clustered

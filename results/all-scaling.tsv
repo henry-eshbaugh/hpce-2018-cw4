@@ -11,5 +11,3 @@
 8192	1.190	3.244	2.985	1.147	0.242
 16384	2.571	4.928	5.101	2.728	1.027
 32768	6.104	8.463	9.334	7.824	4.487
-65536	ERROR : Couldn't read nIn from 'w/scaling_65536.bin'.	ERROR : Couldn't read nIn from 'w/scaling_65536.bin'.	ERROR : Couldn't read nIn from 'w/scaling_65536.bin'.	ERROR : Couldn't read nIn from 'w/scaling_65536.bin'.	ERROR : Couldn't read nIn from 'w/scaling_65536.bin'.
-	0.001	0.001	0.001	0.001	0.001

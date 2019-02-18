@@ -1,0 +1,28 @@
+set term pdf
+set key off
+set logscale xy
+set output "results/pipeline_p_vs_bandwidth.pdf"
+set title "Number of pipelined jobs versus throughput"
+set xlabel "Number of pipelined jobs"
+set ylabel "Throughput (B/s, avg)"
+plot "results/all-P.tsv" using 1:2 with lines
+set key outside
+set output "results/single_layer_ratio_vs_time.pdf"
+set title "Execution time (real) vs input/output ratio"
+set xlabel "I/O ratio"
+set ylabel "Execution time (s)"
+plot "results/all-ratio.tsv" using 1:2 title "simple" with lines, \
+     "results/all-ratio.tsv" using 1:3 title "par for naive" with lines, \
+     "results/all-ratio.tsv" using 1:4 title "par for atomic" with lines, \
+     "results/all-ratio.tsv" using 1:5 title "clustered" with lines, \
+     "results/all-ratio.tsv" using 1:6 title "par for cluster" with lines
+set output "results/single_layer_n_vs_time.pdf"
+set title "Execution time (real) vs input/output size"
+set xlabel "I/O size"
+set ylabel "Execution time (s)"
+plot "results/all-scaling.tsv" using 1:2 title "simple" with lines, \
+     "results/all-scaling.tsv" using 1:3 title "par for naive" with lines, \
+     "results/all-scaling.tsv" using 1:4 title "par for atomic" with lines, \
+     "results/all-scaling.tsv" using 1:5 title "clustered" with lines, \
+     "results/all-scaling.tsv" using 1:6 title "par for cluster" with lines
+exit

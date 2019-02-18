@@ -23,6 +23,7 @@ public:
 	for (unsigned i = 0; i < synapses.size(); i++)
 		assoc_synapses[synapses[i].dst].push_back(synapses[i]);
     }
+    ~ParForClusteredLayer() { delete [] assoc_synapses; }
    
     const char *name() const
     { return "par_for_naive"; }

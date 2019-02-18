@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
                 config=config.substr(0, colon);
             }
             
-            fprintf(stderr," Loading layer %u from file %s using engine %s\n", i, config.c_str(), engine.c_str());
+            //fprintf(stderr," Loading layer %u from file %s using engine %s\n", i, config.c_str(), engine.c_str());
             
             uint16_t nIn, nOut;
             std::vector<synapse_t> synapses;
